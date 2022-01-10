@@ -10,6 +10,7 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve? */
 
 const computerElement = document.getElementById('computer');
 const playerElement = document.getElementById('player');
+const messageElement = document.getElementById('message');
 
 const numberComputer = Math.floor((Math.random() * 6) + 1);
 const numberPlayer = Math.floor((Math.random() * 6) + 1);
@@ -17,8 +18,49 @@ const numberPlayer = Math.floor((Math.random() * 6) + 1);
 console.log(`Number Computer: ${numberComputer}`);
 console.log(`Number Player: ${numberPlayer}`);
 
-if()
-{
+let message;
+let colorComputer;
+let colorPlayer;
 
+
+if(numberComputer === numberPlayer)
+{
+    message = `
+    <div class="alert alert-info" role="alert">
+        C'è stato un pareggio
+    </div>
+    `
+    colorComputer = 'color-blue';
+    colorPlayer = 'color-blue';
+
+    console.log("C'è stato un pareggio");
 }
+else if(numberComputer > numberPlayer)
+{
+    message = `
+    <div class="alert alert-danger" role="alert">
+        Mi dispiace hai perso!
+    </div>
+    `
+    colorComputer = 'color-green';
+    colorPlayer = 'color-red';
+
+    console.log('Mi dispiace hai perso!');
+}
+else
+{
+    message = `
+    <div class="alert alert-success" role="alert">
+        Complimenti! hai vinto!
+    </div>
+    `
+    console.log('Complimenti! hai vinto!');
+
+    colorComputer = 'color-red';
+    colorPlayer = 'color-green';
+}
+
+computerElement.innerHTML = `<div class="${colorComputer}"><i class="fas fa-desktop"></i> ${numberComputer} </div>`;
+playerElement.innerHTML = `<div class="${colorPlayer}"><i class="fas fa-user"></i> ${numberPlayer}</div>`;
+messageElement.innerHTML = message;
 
