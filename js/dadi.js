@@ -8,7 +8,8 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve? */ 
 
-
+const computerElement = document.getElementById('computer');
+const playerElement = document.getElementById('player');
 
 const numberComputer = Math.floor((Math.random() * 6) + 1);
 const numberPlayer = Math.floor((Math.random() * 6) + 1);
@@ -18,6 +19,6 @@ console.log(`Number Player: ${numberPlayer}`);
 
 if()
 {
-    
+
 }
 
