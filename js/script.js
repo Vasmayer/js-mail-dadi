@@ -14,3 +14,10 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve? */
 
 /* ESERCIZIO 1 */
 const emails = ['email-1@gmail.com','email-2@gmail.com','email-3@gmail.com','email-4@gmail.com','email-5@gmail.com','email-6@gmail.com'];
+
+const myemail = prompt('Inserisci la tua E-mail!');
+
+/* if(emails.includes(myemail))
+{
+
+} */
