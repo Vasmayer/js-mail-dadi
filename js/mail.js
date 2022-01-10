@@ -17,6 +17,7 @@ const userEmail = prompt('Inserisci la tua E-mail!');
 
 let message = '';
 
+/* if an email is in array */
 if(emails.includes(userEmail))
 {
     message = `
@@ -36,4 +37,5 @@ else
     console.log('email NON presente nel database');
 }
 
+/* print on dom */
 messageElement.innerHTML = message;
