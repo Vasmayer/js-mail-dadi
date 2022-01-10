@@ -10,3 +10,14 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve? */
 
 
 
+const numberComputer = Math.floor((Math.random() * 6) + 1);
+const numberPlayer = Math.floor((Math.random() * 6) + 1);
+
+console.log(`Number Computer: ${numberComputer}`);
+console.log(`Number Player: ${numberPlayer}`);
+
+if()
+{
+    
+}
+
